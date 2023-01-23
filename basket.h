@@ -21,7 +21,7 @@ public:
     void input();
     void output();
     static void payment(float sum);
-    static float sum(basket p);
+    float sum();
 };
 
 

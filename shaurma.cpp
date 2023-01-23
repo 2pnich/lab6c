@@ -29,5 +29,6 @@ void shaurma::input() {
 }
 
 void shaurma::output() {
-    cout<<"\nВид шаурмы: "<< getType() << " Вес шаурмы: " << getWeight() << " Цена шаурмы: " << getPrice() << endl;
+    if (getType() != "type")
+        cout<<"\nВид шаурмы: "<< getType() << " Вес шаурмы: " << getWeight() << " Цена шаурмы: " << getPrice() << endl;
 }

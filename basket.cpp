@@ -29,17 +29,17 @@ void basket::output() {
 //    ОБЫЧНАЯ ФУНКЦИЯ
     _shaurma.output();
 //////////ВЫЗОВ ВИРТУАЛЬНОЙ ФУНКЦИИ
-    Dish a;
-    a.output();
+//    Dish a;
+//    a.output();
 //    _pizza.output();
 //    _drink.output();
 //    _soup.output();
 //    _fries.output();
 }
 
-float basket::sum(basket p) {
+float basket::sum() {
     float sum;
-    sum = p._shaurma.getPrice() + p._pizza.getPrice() + p._drink.getPrice() + p._soup.getPrice() + p._fries.getPrice();
+    sum = _shaurma.getPrice() + _pizza.getPrice() + _drink.getPrice() + _soup.getPrice() + _fries.getPrice();
     return sum;
 }
 
